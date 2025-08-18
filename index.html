@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -9,148 +8,59 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='reset.css'>
 </head>
-
 <body>
     <main id="page">
-        <section id="itens" class="menu_bar">
-            <main id="menu">
-                <input class="menu_itens" type="radio" name="opcao" id="about" checked />
-                <label class="menu_text" for="about">Sobre</label>
-                <section id="info">
-                    <header class="info_head">
-                        <span>S</span>OBRE
-                    </header>
-                    <main class="about">
-                        <article>
-                            <p>Meu nome é <span>Paulo Destro de Carvalho</span>, sou desenvolvedor especializado em
-                                <span>Java e JavaScript</span>, com sólida experiência em desenvolvimento backend para
-                                aplicações corporativas e integração de sistemas.</p>
-                            <p>Busco a formação em Análise de Sistemas e o possuo diversos cursos de especialização que
-                                reforçam meu compromisso com aprendizado contínuo e boas práticas de desenvolvimento.
-                            </p>
-                            <p>Atuei em empresas de grande relevância no setor de tecnologia, como <span>PicPay, IBM e
-                                    Nanodata Serviços Online</span> , participando de projetos robustos voltados a
-                                integração de sistemas, processamento de documentos fiscais, e soluções para
-                                instituições financeiras de grande porte, como Bradesco e Santander.</p>
-                        </article>
-                        <h1 id="tecnologies_title">
-                            <span>T</span>ECNOLOGIAS
-                        </h1>
-                        <div id="tecnologies">
-
-                            <section class="exp_container">
-                                <img src="./assests/java-logo-black-and-white-1-removebg-preview.png"></img>
-                                <p>Java</p>
-                            </section>
-                            <section class="exp_container">
-                                <img src="./assests/spring-boot.svg"></img>
-                                <p>Spring Boot</p>
-                            </section>
-                            <section class="exp_container">
-                                <img src="./assests/postgres.png"></img>
-                                <p>Postgres</p>
-                            </section>
-                            <section class="exp_container">
-                                <img src="./assests/redis.png"></img>
-                                <p>Redis</p>
-                            </section>
-                            <section class="exp_container">
-                                <img src="./assests/0_s9ofuA0fj3NXfM_9-removebg-preview.png"></img>
-                                <p>Kafka</p>
-                            </section>
-                            <section class="exp_container">
-                                <img src="./assests/integrations-rabbitmq-removebg-preview-removebg-preview.png"></img>
-                                <p>RabbitMQ</p>
-                            </section>
-                            <section class="exp_container">
-                                <img src="./assests/activemq_logo_white_vertical.png"></img>
-                                <p>ArtemisMQ</p>
-                            </section>
-                            <section class="exp_container">
-                                <img src="./assests/javascript.png"></img>
-                                <p>Java Sricpt</p>
-                            </section>
-                            <section class="exp_container">
-                                <img src="./assests/vuejs.png"></img>
-                                <p>VueJS</p>
-                            </section>
-                            <section class="exp_container">
-                                <img src="./assests/logo-react.svg"></img>
-                                <p>ReactJS</p>
-                            </section>
-                        </div>
-                    </main>
+        <section id="menu">
+            <main id="menu_options">
+                <section class="options">
+                    <input class="menu_input" type="radio" name="opcao" id="about" checked />
+                    <label class="menu_text label_box" for="about">
+                        <img class="menu_logo" src="./assests/person.svg" alt="Sobre">
+                        <p>Sobre</p>
+                    </label>
                 </section>
-                <input class="menu_itens" type="radio" name="opcao" id="exp" />
-                <label class="menu_text" for="exp">Experiencias</label>
-                <section id="info">
-                    <header class="info_head">
-                        <span>E</span>xperiencias
-                    </header>
-
-                    <div style="height: 200px; overflow-y: scroll; border: 1px solid black;">
-                        <div style="height: 1000px; background: lightblue;"></div>
-                    </div>
-
-
+                <section class="options">
+                    <input class="menu_input" type="radio" name="opcao" id="exp"  />
+                    <label class="menu_text label_box" for="exp">
+                        <img class="menu_logo" src="./assests/experiment.svg" alt="Sobre">
+                        <p>Experiencias</p>
+                    </label>
+                    <article class="board">
+                    </article>
                 </section>
-                <input class="menu_itens" type="radio" name="opcao" id="edu" />
-                <label class="menu_text" for="edu">Educação</label>
-                <section id="info">
-                    <header class="info_head">
-                        <span>E</span>ducação
-                    </header>
-                    <main>
-
-                    </main>
+                <section class="options">
+                    <input class="menu_input" type="radio" name="opcao" id="edu"  />
+                    <label class="menu_text label_box" for="edu">
+                        <img class="menu_logo" src="./assests/education.svg" alt="Sobre">
+                        <p>Educação</p>
+                    </label>
                 </section>
-                <input class="menu_itens" type="radio" name="opcao" id="cert" />
-                <label class="menu_text" for="cert">Certificados</label>
-                <section id="info">
-                    <header class="info_head">
-                        <span>C</span>ertificados
-                    </header>
-                    <main>
-
-                    </main>
+                <section class="options">
+                    <input class="menu_input" type="radio" name="opcao" id="cert" />
+                    <label class="menu_text label_box" for="cert">
+                        <img class="menu_logo" src="./assests/certificate.svg" alt="Sobre">
+                        <p>Certificados</p>
+                    </label>
                 </section>
             </main>
         </section>
-        <section id="itens" class="perfil_container">
-            <header id="header_perfil">
-            </header>
-            <div class="perfil_menu">
-                <main id="perfil">
-                    <section id="title_perfil">
-                        <p id="name_perfil" class="perfil_text">Paulo Destro de Carvalho</p>
-                        <p id="job_perfil" class="perfil_text">Desenvolvedor de Software</p>
-                    </section>
-                    <section id="links_perfil">
-                        <a id="git_hub_perfil" target="_blank" class="links_container" href="https://github.com/pddec">
-                            <img src="./assests/github.png"></img>
-                            <p>@pauloddec</p>
-                        </a>
-                        <a target="_blank" id="linkedin_perfil" class="links_container"
-                            href="https://www.linkedin.com/in/paulo-destro-9372a317a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">
-                            <img src="./assests/linkedin.png"></img>
-                            <p>Paulo Destro</p>
-                        </a>
-                    </section>
-                </main>
-                <footer id="perfil_footer">
-                    <a id="download" target="_blank" class="links_footer_container" href="https://github.com/pddec">
-                        <img src="./assests/download_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"></img>
-                        <p>Download curriculo</p>
-                    </a>
-                    <a target="_blank" id="whatsapp" class="links_footer_container"
-                        href="https://www.linkedin.com/in/paulo-destro-9372a317a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">
-                        <img src="./assests/whatapp.png"></img>
-                        <p>Contato</p>
-                    </a>
-                </footer>
-            </div>
-        </section>
+        <article id="profile">
+            <section id="title_perfil">
+                <p id="name_perfil" class="perfil_text">Paulo Destro de Carvalho</p>
+                <p id="job_perfil" class="perfil_text">Desenvolvedor de Software</p>
+            </section>
+            <section id="links_perfil">
+                <a id="git_hub_perfil" target="_blank" class="links_container" href="https://github.com/pddec">
+                    <img src="./assests/github.png"></img>
+                    <p>@pauloddec</p>
+                </a>
+                <a target="_blank" id="linkedin_perfil" class="links_container"
+                    href="https://www.linkedin.com/in/paulo-destro-9372a317a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">
+                    <img src="./assests/linkedin.png"></img>
+                    <p>Paulo Destro</p>
+                </a>
+            </section>
+        </article>
     </main>
 </body>
-
 </html>
