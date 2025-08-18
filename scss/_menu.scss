@@ -15,7 +15,7 @@
      & input.option{
 
         display: none;
-        
+
         &:checked + label.option_box::before {
             filter: invert(1);
         }
@@ -70,16 +70,7 @@
         justify-content: center;
         align-items: center;
 
-        &:hover{
-            background-color:  #57C785;
-            & label.option_box{
-                color: whitesmoke;
-                & img.logo{
-                    filter: brightness(0) invert(1) sepia(1) saturate(0) hue-rotate(0deg);
-                }
-                
-            }
-        }
+       
 
 
         @include checked();
@@ -91,6 +82,15 @@
             justify-content: center;
             align-items: center;
             margin: 10px 0 10px 0;
+
+            &:hover{
+                background-color:  #57C785;
+                color:whitesmoke;
+
+                & img.logo{
+                    filter: brightness(0) invert(1) sepia(1) saturate(0) hue-rotate(0deg);
+                }
+            }
         }
 
         @include mixin.w1080board();

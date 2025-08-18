@@ -39,15 +39,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-#menu li.options:hover {
-  background-color: #57C785;
-}
-#menu li.options:hover label.option_box {
-  color: whitesmoke;
-}
-#menu li.options:hover label.option_box img.logo {
-  filter: brightness(0) invert(1) sepia(1) saturate(0) hue-rotate(0deg);
-}
 #menu li.options label.option_box {
   display: flex;
   flex-direction: ro;
@@ -85,6 +76,13 @@ body {
   justify-content: center;
   align-items: center;
   margin: 10px 0 10px 0;
+}
+#menu li.options label.option_box:hover {
+  background-color: #57C785;
+  color: whitesmoke;
+}
+#menu li.options label.option_box:hover img.logo {
+  filter: brightness(0) invert(1) sepia(1) saturate(0) hue-rotate(0deg);
 }
 #menu li.options section.board {
   display: flex;
