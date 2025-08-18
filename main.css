@@ -42,9 +42,6 @@ body {
   font-weight: 700;
   color: black;
 }
-#menu_options section.options span.board footer.infos {
-  overflow-y: scroll;
-}
 #menu_options section.options span.board footer.infos label.infos_title {
   font-size: 38px;
   color: rgb(66, 64, 64);
@@ -60,6 +57,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  overflow-y: scroll;
 }
 #menu_options section.options span.board footer.infos ul.info_items li.item {
   display: flex;

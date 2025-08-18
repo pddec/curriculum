@@ -57,7 +57,7 @@ body{
             }
 
             & footer.infos{
-                overflow-y: scroll;
+                
                 & label.infos_title{
                     font-size: 38px;
                     color:rgb(66, 64, 64);
@@ -76,6 +76,7 @@ body{
                     justify-content: center;
                     align-items: center;
                     flex-wrap: wrap;
+                    overflow-y: scroll;
                     &  li.item{
                         display: flex;
                         flex-direction: column;
