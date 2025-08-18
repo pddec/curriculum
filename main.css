@@ -121,6 +121,21 @@ body {
   width: 45px;
   height: 45px;
 }
+#menu li.options section.board main.list_exps ul.exps li.exp, #menu li.options section.board main.list_exps ul.exps li.cert, #menu li.options section.board main.list_exps ul.certs li.exp, #menu li.options section.board main.list_exps ul.certs li.cert, #menu li.options section.board main.list_certs ul.exps li.exp, #menu li.options section.board main.list_certs ul.exps li.cert, #menu li.options section.board main.list_certs ul.certs li.exp, #menu li.options section.board main.list_certs ul.certs li.cert {
+  margin: 10px 0 0 0;
+}
+#menu li.options section.board main.list_exps ul.exps li.exp span.title, #menu li.options section.board main.list_exps ul.exps li.cert span.title, #menu li.options section.board main.list_exps ul.certs li.exp span.title, #menu li.options section.board main.list_exps ul.certs li.cert span.title, #menu li.options section.board main.list_certs ul.exps li.exp span.title, #menu li.options section.board main.list_certs ul.exps li.cert span.title, #menu li.options section.board main.list_certs ul.certs li.exp span.title, #menu li.options section.board main.list_certs ul.certs li.cert span.title {
+  display: flex;
+  flex-direction: row;
+  color: rgb(114.75, 114.75, 114.75);
+  font-size: 24px;
+}
+#menu li.options section.board main.list_exps ul.exps li.exp span.title p, #menu li.options section.board main.list_exps ul.exps li.cert span.title p, #menu li.options section.board main.list_exps ul.certs li.exp span.title p, #menu li.options section.board main.list_exps ul.certs li.cert span.title p, #menu li.options section.board main.list_certs ul.exps li.exp span.title p, #menu li.options section.board main.list_certs ul.exps li.cert span.title p, #menu li.options section.board main.list_certs ul.certs li.exp span.title p, #menu li.options section.board main.list_certs ul.certs li.cert span.title p {
+  color: black;
+}
+#menu li.options section.board main.list_exps ul.exps li.exp p.date, #menu li.options section.board main.list_exps ul.exps li.cert p.date, #menu li.options section.board main.list_exps ul.certs li.exp p.date, #menu li.options section.board main.list_exps ul.certs li.cert p.date, #menu li.options section.board main.list_certs ul.exps li.exp p.date, #menu li.options section.board main.list_certs ul.exps li.cert p.date, #menu li.options section.board main.list_certs ul.certs li.exp p.date, #menu li.options section.board main.list_certs ul.certs li.cert p.date {
+  font-weight: bolder;
+}
 #menu li.options section.board header span.title, #menu li.options section.board footer span.title {
   display: flex;
   flex-direction: row;
@@ -160,6 +175,21 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0 15px 0 0;
+}
+
+#title_perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#name_perfil {
+  font-size: 36px;
+}
+
+#job_perfil {
+  font-size: 24px;
 }
 
 @media (min-width: 1081px) {

@@ -34,3 +34,18 @@
         padding: 0 15px 0 0;
     }
 }
+
+#title_perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#name_perfil{
+    font-size: 36px;
+}
+
+#job_perfil{
+    font-size: 24px;
+}
