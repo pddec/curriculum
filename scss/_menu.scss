@@ -1,0 +1,54 @@
+@use "./board" as mixin;
+
+
+#menu{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 15px;
+
+    padding: 5px;
+
+    background-color: whitesmoke;
+    
+    & li.options{
+
+        display: flex;
+
+        width: 95px;
+        height: 45px;
+
+        &:hover{
+            background-color:  #57C785;
+            & label.option_container{
+                color: whitesmoke;
+                & img.logo{
+                    filter: brightness(0) invert(1) sepia(1) saturate(0) hue-rotate(0deg);
+                }
+                
+            }
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & input.option{
+            display: none;
+        }
+
+        & label.option_container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0 10px 0;
+        }
+
+        @include mixin.w1080board();
+    }
+}

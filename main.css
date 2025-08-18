@@ -1,3 +1,7 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -18,10 +22,44 @@ body {
   width: 58%;
 }
 
-#menu_options section.options input.menu_input {
+#menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  padding: 5px;
+  background-color: whitesmoke;
+}
+#menu li.options {
+  display: flex;
+  width: 95px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#menu li.options:hover {
+  background-color: #57C785;
+}
+#menu li.options:hover label.option_container {
+  color: whitesmoke;
+}
+#menu li.options:hover label.option_container img.logo {
+  filter: brightness(0) invert(1) sepia(1) saturate(0) hue-rotate(0deg);
+}
+#menu li.options input.option {
   display: none;
 }
-#menu_options section.options span.board {
+#menu li.options label.option_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 10px 0;
+}
+#menu li.options section.board {
   display: flex;
   position: absolute;
   flex-direction: column;
@@ -33,49 +71,42 @@ body {
   overflow-y: scroll;
   padding: 15px;
 }
-#menu_options section.options span.board header.title {
-  font-size: 38px;
-  color: rgb(66, 64, 64);
-  padding: 0 0 10px 0;
+#menu li.options section.board main.about {
+  margin-bottom: 15px;
 }
-#menu_options section.options span.board header.title span {
-  font-weight: 700;
-  color: black;
+#menu li.options section.board main.about article span {
+  font-weight: bolder;
 }
-#menu_options section.options span.board footer.infos label.infos_title {
-  font-size: 38px;
-  color: rgb(66, 64, 64);
-  padding: 0 0 10px 0;
-}
-#menu_options section.options span.board footer.infos label.infos_title span {
-  font-weight: 700;
-  color: black;
-}
-#menu_options section.options span.board footer.infos ul.info_items {
+#menu li.options section.board footer.additional_infos ul.techs {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  overflow-y: scroll;
-}
-#menu_options section.options span.board footer.infos ul.info_items li.item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 10px 0 0;
-}
-#menu_options section.options span.board footer.infos ul.info_items li.item img {
-  width: 64px;
-  height: 64px;
-}
-#menu_options section.options label.label_box {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+#menu li.options section.board footer.additional_infos ul.techs li.tech {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px 10px 0;
+}
+#menu li.options section.board footer.additional_infos ul.techs li.tech img {
+  width: 45px;
+  height: 45px;
+}
+#menu li.options section.board header span.title, #menu li.options section.board footer span.title {
+  display: flex;
+  flex-direction: row;
+  color: rgb(114.75, 114.75, 114.75);
+  font-size: 32px;
+  margin: 0 0 15px 0;
+}
+#menu li.options section.board header span.title p, #menu li.options section.board footer span.title p {
+  color: black;
+}
+
 #profile {
   background-color: whitesmoke;
   display: flex;
@@ -113,18 +144,17 @@ body {
   }
   #profile {
     height: 32vh;
-    width: 58%;
+    width: 38%;
   }
   #page {
     position: relative;
     justify-content: left;
     height: 82vh;
-    width: 68%;
+    width: 58%;
   }
-  #menu_options section.options span.board {
-    position: absolute;
-    right: 0;
+  #menu li.options section.board {
     top: 8%;
+    right: 190px;
     width: 42%;
     height: 82%;
   }

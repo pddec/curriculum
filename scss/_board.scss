@@ -1,0 +1,80 @@
+@use "sass:color";
+
+@mixin w1080board(){
+
+    & section.board {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        right: 0;
+        top: calc(100vh * 0.08);
+        width: calc(100% * 0.42);
+        height: calc(100% * 0.82);
+        background-color: whitesmoke;
+        overflow-y:scroll;
+        padding: 15px;
+
+        & main.about{
+            margin-bottom: 15px;
+
+            & article{
+                & span{
+                    font-weight: bolder;
+                }
+            } 
+            
+               
+        }
+
+        & footer.additional_infos{
+            & ul.techs{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+                
+                
+                & li.tech{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+
+                    padding: 0 15px 10px 0;
+
+                    & img{
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+            }
+        }
+
+        & header, footer{
+            & span.title{
+                display: flex;
+                flex-direction: row;
+            
+                color: color.adjust(black, $lightness: 45%);
+                font-size: 32px;
+                margin: 0 0 15px 0;
+
+                & p{
+                    color:black;
+                }
+            }
+        }
+    }
+}
+
+@mixin board(){
+    & section.board {   
+        top: calc(100% * 0.08);
+        right: 190px;
+        width: calc(100% * 0.42);
+        height: calc(100% * 0.82);
+    }
+}

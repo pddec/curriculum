@@ -1,0 +1,27 @@
+@use "./board" as mixin;
+
+@media (min-width: 1081px) {
+    body{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #profile{
+        height: calc(100vh * 0.32);
+        width: calc(100% -  (100% * 0.62));
+    }
+    
+    #page {
+        position: relative;
+        justify-content: left;
+        height: calc(100vh * 0.82);
+        width: calc(100% -  (100% * 0.42) );
+    }
+
+    #menu{
+        
+        & li.options{
+            @include mixin.board();
+        }
+    }
+}
