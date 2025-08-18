@@ -1,7 +1,8 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: aquamarine;
+  background: #2A7B9B;
+  background: linear-gradient(333deg, rgb(42, 123, 155) 0%, rgb(87, 199, 133) 53%, rgb(237, 221, 83) 100%);
   display: flex;
   flex-direction: row;
   justify-content: left;
@@ -20,14 +21,56 @@ body {
 #menu_options section.options input.menu_input {
   display: none;
 }
-#menu_options section.options article.board {
+#menu_options section.options span.board {
   display: flex;
   position: absolute;
+  flex-direction: column;
   right: 0;
   top: 8vh;
   width: 42%;
   height: 82%;
   background-color: whitesmoke;
+  overflow-y: scroll;
+  padding: 15px;
+}
+#menu_options section.options span.board header.title {
+  font-size: 38px;
+  color: rgb(66, 64, 64);
+  padding: 0 0 10px 0;
+}
+#menu_options section.options span.board header.title span {
+  font-weight: 700;
+  color: black;
+}
+#menu_options section.options span.board footer.infos {
+  overflow-y: scroll;
+}
+#menu_options section.options span.board footer.infos label.infos_title {
+  font-size: 38px;
+  color: rgb(66, 64, 64);
+  padding: 0 0 10px 0;
+}
+#menu_options section.options span.board footer.infos label.infos_title span {
+  font-weight: 700;
+  color: black;
+}
+#menu_options section.options span.board footer.infos ul.info_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#menu_options section.options span.board footer.infos ul.info_items li.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 10px 0 0;
+}
+#menu_options section.options span.board footer.infos ul.info_items li.item img {
+  width: 64px;
+  height: 64px;
 }
 #menu_options section.options label.label_box {
   display: flex;
@@ -77,11 +120,10 @@ body {
   #page {
     position: relative;
     justify-content: left;
-    background-color: green;
     height: 82vh;
     width: 68%;
   }
-  #menu_options section.options article.board {
+  #menu_options section.options span.board {
     position: absolute;
     right: 0;
     top: 8%;

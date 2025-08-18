@@ -1,7 +1,8 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-color: aquamarine;
+    background: #2A7B9B;
+    background: linear-gradient(333deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 53%, rgba(237, 221, 83, 1) 100%);
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -28,14 +29,66 @@ body{
             display: none;
         }
 
-        & article.board{
+        & span.board{
             display: flex;
             position: absolute;
+            flex-direction: column;
             right: 0;
             top: calc(100vh * 0.08);
             width: calc(100% * 0.42);
             height: calc(100% * 0.82);
             background-color: whitesmoke;
+            overflow-y:scroll;
+            padding: 15px;
+
+            & header.title{
+                font-size: 38px;
+                color:rgb(66, 64, 64);
+                padding: 0 0 10px 0;
+                & span{
+                    font-weight: 700;
+                    color:black;
+                }
+
+            }
+
+            & main.about{
+                
+            }
+
+            & footer.infos{
+                overflow-y: scroll;
+                & label.infos_title{
+                    font-size: 38px;
+                    color:rgb(66, 64, 64);
+                    padding: 0 0 10px 0;
+                    & span{
+                        font-weight: 700;
+                        color:black;
+                    }
+
+                }
+                
+
+                & ul.info_items{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    &  li.item{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 10px 10px 0 0;
+                        & img{
+                            width: 64px;
+                            height: 64px;
+                        }
+                    }
+                }
+            }
         }
 
         & label.label_box{
@@ -46,6 +99,7 @@ body{
             &.menu_logo{
 
             }
+
         }
     }
 }
@@ -101,7 +155,6 @@ body{
     #page {
         position: relative;
         justify-content: left;
-        background-color: green;
         height: calc(100vh * 0.82);
         width: calc(100% -  (100% * 0.32) );
     }
@@ -109,7 +162,7 @@ body{
         
         & section.options{
 
-            & article.board{
+            & span.board{
                 position: absolute;
                 right: 0;
                 top: calc(100% * 0.08);
