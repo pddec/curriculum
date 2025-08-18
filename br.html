@@ -5,52 +5,62 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='br.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='reset.css'>
 </head>
 <body>
     <main id="page">
-        <section id="page_container">
-            <section id="menu_bar">
-                <main id="menu_bar_container">
-                    <div class="items_container">
-                        <input class="menu_itens" type="radio" name="opcao" id="about" checked/>
-                        <label class="menu_label" for="about">
-                            <img class="menu_logo" src="./assests/person_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"/>
-                            <p class="menu_text">Sobre</p>
-                        </label>
-                    </div>
-                    <div class="items_container">
-                        <input class="menu_itens" type="radio" name="opcao" id="exp"/>
-                        <label class="menu_label" for="exp">
-                            <img class="menu_logo" src="./assests/experiment_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"/>
-                            <p class="menu_text">Experiencias</p>
-                        </label>
-                
-                    </div>
-                    <div class="items_container">
-                        <input class="menu_itens" type="radio" name="opcao" id="edu"/>
-                        <label class="menu_label" for="edu">
-                            <img class="menu_logo" src="./assests/local_library_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"/>
-                            <p class="menu_text">Educação</p>
-                        </label>
-                    </div>
-                    <div class="items_container">
-                        <input class="menu_itens" type="radio" name="opcao" id="cert"/>
-                        <label class="menu_label" for="cert">
-                            <img class="menu_logo" src="./assests/workspace_premium_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"/>
-                            <p class="menu_text">Certficados</p>
-                        </label>
-                    </div>
-                </main>
-                <footer>
-                    
-                </footer>
+        <section id="menu">
+            <main id="menu_options">
+                <section class="options">
+                    <input class="menu_input" type="radio" name="opcao" id="about" checked />
+                    <label class="menu_text label_box" for="about">
+                        <img class="menu_logo" src="./assests/person.svg" alt="Sobre">
+                        <p>Sobre</p>
+                    </label>
+                </section>
+                <section class="options">
+                    <input class="menu_input" type="radio" name="opcao" id="exp"  />
+                    <label class="menu_text label_box" for="exp">
+                        <img class="menu_logo" src="./assests/experiment.svg" alt="Sobre">
+                        <p>Experiencias</p>
+                    </label>
+                    <article class="board">
+                    </article>
+                </section>
+                <section class="options">
+                    <input class="menu_input" type="radio" name="opcao" id="edu"  />
+                    <label class="menu_text label_box" for="edu">
+                        <img class="menu_logo" src="./assests/education.svg" alt="Sobre">
+                        <p>Educação</p>
+                    </label>
+                </section>
+                <section class="options">
+                    <input class="menu_input" type="radio" name="opcao" id="cert" />
+                    <label class="menu_text label_box" for="cert">
+                        <img class="menu_logo" src="./assests/certificate.svg" alt="Sobre">
+                        <p>Certificados</p>
+                    </label>
+                </section>
+            </main>
+        </section>
+        <article id="profile">
+            <section id="title_perfil">
+                <p id="name_perfil" class="perfil_text">Paulo Destro de Carvalho</p>
+                <p id="job_perfil" class="perfil_text">Desenvolvedor de Software</p>
             </section>
-
-        </section>
-        <section id="info">
-        </section>
+            <section id="links_perfil">
+                <a id="git_hub_perfil" target="_blank" class="links_container" href="https://github.com/pddec">
+                    <img src="./assests/github.png"></img>
+                    <p>@pauloddec</p>
+                </a>
+                <a target="_blank" id="linkedin_perfil" class="links_container"
+                    href="https://www.linkedin.com/in/paulo-destro-9372a317a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">
+                    <img src="./assests/linkedin.png"></img>
+                    <p>Paulo Destro</p>
+                </a>
+            </section>
+        </article>
     </main>
 </body>
 </html>

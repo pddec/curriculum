@@ -1,0 +1,121 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    overflow: hidden;
+}
+
+#page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: 100%;
+    width: calc(100% -  (100% * 0.42));
+    
+}
+
+#menu_options{
+    
+
+    & section.options{
+        
+        & input.menu_input{
+            display: none;
+        }
+
+        & article.board{
+            display: flex;
+            position: absolute;
+            right: 0;
+            top: calc(100vh * 0.08);
+            width: calc(100% * 0.42);
+            height: calc(100% * 0.82);
+            background-color: whitesmoke;
+        }
+
+        & label.label_box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &.menu_logo{
+
+            }
+        }
+    }
+}
+
+#profile{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: calc( 100% * 0.32);
+
+}
+
+#links_perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    & img{
+        width: 45px;
+        height: 45px;
+    }
+
+    & a {
+        text-decoration: none;
+        color:black;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0 15px 0 0;
+    }
+}
+
+@media (min-width: 1081px) {
+    body{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #profile{
+        
+        height: calc(100vh * 0.32);
+        width: calc(100% -  (100% * 0.42));
+    }
+    
+    #page {
+        position: relative;
+        justify-content: left;
+        background-color: green;
+        height: calc(100vh * 0.82);
+        width: calc(100% -  (100% * 0.32) );
+    }
+    #menu_options{
+        
+        & section.options{
+
+            & article.board{
+                position: absolute;
+                right: 0;
+                top: calc(100% * 0.08);
+                width: calc(100% * 0.42);
+                height: calc(100% * 0.82);
+            }
+        }
+    }
+}
