@@ -16,6 +16,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
+    margin: 15px 0 0 0;
 
     & img{
         width: 45px;
@@ -48,4 +50,25 @@
 
 #job_perfil{
     font-size: 24px;
+}
+
+#download_profile{
+
+    margin: 15px 0 0 0;
+
+    & img{
+        width: 45px;
+        height: 45px;
+    }
+
+    & a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+         color:black;
+
+    }
+    
 }

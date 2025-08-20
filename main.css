@@ -176,6 +176,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: 15px 0 0 0;
 }
 #links_perfil img {
   width: 45px;
@@ -204,6 +205,22 @@ body {
 
 #job_perfil {
   font-size: 24px;
+}
+
+#download_profile {
+  margin: 15px 0 0 0;
+}
+#download_profile img {
+  width: 45px;
+  height: 45px;
+}
+#download_profile a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
 }
 
 @media (min-width: 1918px) {
