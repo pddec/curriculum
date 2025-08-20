@@ -264,5 +264,14 @@ body {
     height: 100%;
   }
 }
+@media (max-width: 415px) {
+  #name_perfil {
+    font-size: 16px;
+  }
+  #job_perfil {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
