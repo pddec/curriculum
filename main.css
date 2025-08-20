@@ -206,7 +206,7 @@ body {
   font-size: 24px;
 }
 
-@media (min-width: 1081px) {
+@media (min-width: 1918px) {
   body {
     justify-content: center;
     align-items: center;
@@ -217,15 +217,24 @@ body {
   }
   #page {
     position: relative;
-    justify-content: left;
+    justify-content: start;
     height: 82vh;
-    width: 58%;
+    width: 68%;
   }
   #menu li.options section.board {
     top: 8%;
-    right: 190px;
+    right: 8%;
     width: 42%;
     height: 82%;
+  }
+}
+@media (max-width: 988px) {
+  #name_perfil {
+    font-size: 24px;
+  }
+  #job_perfil {
+    font-size: 20px;
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 600px) {

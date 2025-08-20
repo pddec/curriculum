@@ -1,7 +1,9 @@
 @use "./board" as mixin;
 
-@media (min-width: 1081px) {
-    body{
+
+
+@media (min-width: 1918px) {
+     body{
         justify-content: center;
         align-items: center;
     }
@@ -13,9 +15,9 @@
     
     #page {
         position: relative;
-        justify-content: left;
+        justify-content: start;
         height: calc(100vh * 0.82);
-        width: calc(100% -  (100% * 0.42) );
+        width: calc(100% -  (100% * 0.32) );
     }
 
     #menu{
@@ -23,5 +25,21 @@
         & li.options{
             @include mixin.board();
         }
+    }
+}
+
+@media (min-width: 1081px) {
+    
+}
+
+@media (max-width:988px) {
+    
+    #name_perfil{
+        font-size: 24px;
+    }
+
+    #job_perfil{
+        font-size: 20px;
+        margin-bottom: 15px;
     }
 }

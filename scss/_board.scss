@@ -118,7 +118,7 @@
 @mixin board(){
     & section.board {   
         top: calc(100% * 0.08);
-        right: 190px;
+        right: calc(100% * 0.08);
         width: calc(100% * 0.42);
         height: calc(100% * 0.82);
     }
