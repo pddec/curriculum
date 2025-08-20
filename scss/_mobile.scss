@@ -1,0 +1,32 @@
+@use "./board" as mixin;
+
+@media (max-width: 600px) { 
+
+    body{
+        justify-content: center;
+        overflow-y: scroll;
+    }
+
+    #page{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: start;
+    }
+
+    #name_perfil{
+        font-size: 24px;
+    }
+
+    #job_perfil{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    #menu{
+        flex-direction: row;
+
+         & li.options{
+            @include mixin.mobile_board();
+         }
+    }
+}

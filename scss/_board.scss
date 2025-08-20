@@ -54,7 +54,9 @@
             }
         }
 
-        main.list_exps, main.list_certs{
+    
+
+        #list_exps, #list_certs{
             & ul.exps, ul.certs{
                 & li.exp, li.cert{
                     margin: 10px 0 0 0;
@@ -75,6 +77,26 @@
                 }
             }
         }
+
+        #list_certs{
+            & ul.certs li.cert{
+                & ul.cert_items{
+                    margin-top: 15px;
+                    & li.cert_item{
+                        display: flex;
+                        flex-direction: column;
+                        margin: 0 0 10px 0;
+                        & label,p,span{
+                            margin: auto;
+                        }
+                        & span{
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+        
 
         & header, footer{
             & span.title{
@@ -99,5 +121,14 @@
         right: 190px;
         width: calc(100% * 0.42);
         height: calc(100% * 0.82);
+    }
+}
+
+@mixin mobile_board(){
+    & section.board {   
+        top: calc(100% * 0.462);
+        right: 0;
+        width:  100%;
+        height: 100%;
     }
 }
